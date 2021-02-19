@@ -1,0 +1,9 @@
+D:\finaltest\Ado.netInNtier\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+D:\finaltest\Ado.netInNtier\DAL\bin\Debug\netstandard2.0\DAL.dll
+D:\finaltest\Ado.netInNtier\DAL\obj\Debug\netstandard2.0\DAL.csprojAssemblyReference.cache
+D:\finaltest\Ado.netInNtier\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+D:\finaltest\Ado.netInNtier\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+D:\finaltest\Ado.netInNtier\DAL\bin\Debug\netstandard2.0\DAL.pdb
+D:\finaltest\Ado.netInNtier\DAL\obj\Debug\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+D:\finaltest\Ado.netInNtier\DAL\obj\Debug\netstandard2.0\DAL.dll
+D:\finaltest\Ado.netInNtier\DAL\obj\Debug\netstandard2.0\DAL.pdb

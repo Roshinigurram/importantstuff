@@ -1,0 +1,12 @@
+D:\finaltest\Ado.netInNtier\BAL\bin\Debug\netstandard2.0\BAL.deps.json
+D:\finaltest\Ado.netInNtier\BAL\bin\Debug\netstandard2.0\BAL.dll
+D:\finaltest\Ado.netInNtier\BAL\bin\Debug\netstandard2.0\BAL.pdb
+D:\finaltest\Ado.netInNtier\BAL\bin\Debug\netstandard2.0\DAL.dll
+D:\finaltest\Ado.netInNtier\BAL\bin\Debug\netstandard2.0\DAL.pdb
+D:\finaltest\Ado.netInNtier\BAL\obj\Debug\netstandard2.0\BAL.csprojAssemblyReference.cache
+D:\finaltest\Ado.netInNtier\BAL\obj\Debug\netstandard2.0\BAL.AssemblyInfoInputs.cache
+D:\finaltest\Ado.netInNtier\BAL\obj\Debug\netstandard2.0\BAL.AssemblyInfo.cs
+D:\finaltest\Ado.netInNtier\BAL\obj\Debug\netstandard2.0\BAL.csproj.CoreCompileInputs.cache
+D:\finaltest\Ado.netInNtier\BAL\obj\Debug\netstandard2.0\BAL.csproj.CopyComplete
+D:\finaltest\Ado.netInNtier\BAL\obj\Debug\netstandard2.0\BAL.dll
+D:\finaltest\Ado.netInNtier\BAL\obj\Debug\netstandard2.0\BAL.pdb

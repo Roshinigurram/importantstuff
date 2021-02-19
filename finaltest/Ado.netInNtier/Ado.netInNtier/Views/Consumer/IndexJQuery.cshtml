@@ -1,0 +1,56 @@
+﻿
+
+@{
+    ViewData["Title"] = "IndexJquery";
+}
+
+<h1>Index Jquery</h1>
+
+<input type="button" class="btn btn-success" onclick="ListRecords()" value="List Records" />
+
+<div class="text-danger" id="divMessage"></div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>BankId</th>
+            <th>BankName</th>
+            <th>BankAdress</th>
+          
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+@section Scripts
+{
+    <script>
+        function ListRecords() {
+            $.ajax({
+                url: "https://localhost:44360/api/Banks",
+                type: "get",
+                contentType: "application/json",
+                success: function (result, status, xhr) {
+                    var tr = '';
+                    $.each(result, function (index, value) {
+                        tr += '<tr>' +
+                            '<td>' + value["bankId"] + '</td><td>' +  value["bankName"] + '</td><td>' + value["bankAdress"] + '</td>' +
+                            '</tr>';
+                    });
+                    $("tbody").append(tr);
+                },
+                error: function (xhr, status, error) {
+                    alert(error);
+                    if (xhr.status == 401) {
+                        $("#divMessage").html('Please <a href="/Home/Login">login</a> and try again.');
+                    }
+                    else {
+                        $("#divMessage").html(JSON.stringify(xhr));
+                    }
+                }
+            });
+        }
+    </script>
+}
+

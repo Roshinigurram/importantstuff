@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .div {
+            border: 5px dotted aqua;
+            background-color: cadetblue;
+            text-decoration-style: wavy;
+            text-align: center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+   
+</head>
+<body>
+
+    <script>
+        $(document).ready(function () {
+            $("p").css("color", "Blue");
+            $(".class1").css("background", "Yellow");
+            $("#Id1").css("color", "Red");
+            $("#hide").click(function () {
+                $("div").hide(2000);
+            });
+            $("#show").click(function () {
+                $("div").show(2000);
+            });
+            jQuery(".class2").css("border", "2px solid yellow");
+            $("p.class1,#p1").css("border", "5px dotted red");
+            $('input[id$="TxtName"]').val("Sreejha");
+            //$("#div2").addClass("Sree");
+            //alert($("#div2").hasClass('Clss'));
+            //alert($("#div2").html());
+            //$("#div3").html("This is a html class in <b>jquery</b>");
+            //$("#div2").append(" | This is a html class in <b>Jquery</b>")
+            //$("p").appendTo(".div")
+            //$("p").prepend("Prepending text:");
+            //$("p").prependTo("#div2");
+            //$("#div2").html($(".div").text());
+            //$("#div2").removeClass("Sree");
+            //$("#btnToggleClass").click(function () {
+            //    $("#div2").toggleClass("Sree");
+            //});
+            //$("#dropChange").change(function () { alert("change handler called"); });
+            $("#pLive").live("click", function () { $(this).before("<p>New paragraph added</p>"); $(this).after("<p id='pLive' style='color:green;'>New paragraph added - this is live</p>"); }); 
+
+
+            //$("#txtBlur").blur(function () { alert("blur handler called"); });
+            //$("#divP").wrap("<div id='divScroll' style='height:100px;width:300px;overflow:scroll;'></div>");
+        });
+        function bindAction() {
+            alert("I am active !");
+        }
+
+        $("#btnBindAction").click(function () { $("#btnAction").bind('click', bindAction).val("Click Now"); });
+
+        $("#btnUnbindAction").click(function () { $("#btnAction").unbind('click', bindAction).val("Simple Button"); });
+
+
+    </script>
+    <!--<marquee>-->
+    <p>This is a jquery</p>
+    <p>Implmenting hide and methods</p>
+    <div class="div" id="div2">
+        <!--Prepending Text:Demo of<b>attr</b>Demo of <b>attr</b>atrribute-->
+        <input type="text" id="TxtName" value="Empty" />
+        <!--<p id="div3">Div3</p>-->        <p id="dropChange">Dropping the change</p>
+        <input type="text" id="btnBindAction" value="Mouse hover Now and then click" />
+        <input type="text" id="btnUnbindAction" value="Simple button" />
+
+        <h2 id="div2">Div2 Attributes</h2>
+        <h2 id="div3">Jquery Attributes</h2>
+        <h1 class="class2"><marquee>Implementing specific classes in jquery</marquee></h1>
+        <h4 class="class1"><marquee>Implementing classes in jquery</marquee></h4>
+        <h3 class="class1" id="p1"><marquee>Select multiple elements at a time</marquee></h3>
+        <h2 id="Id1"><marquee>Implenting the ID in Jquery</marquee></h2>
+    </div>
+    <!--<div id="divScroll" style="height:100px;width:300px;overflow:scroll;">         <p id="divP" style="height:300px;width:500px;background:#efefef;">             This is looking nice.         </p>     </div>-->
+    <!--<p id="divP" style="height:300px;width:500px;background:#efefef;">             This is looking nice.         </p>-->
+    <!--</marquee>-->
+
+    <button id="btnBindAction"><b>Binding </b></button>
+    <button id="btnUnbindAction"><b>Unbinding </b></button>
+
+
+    <button id="hide"><b>Hide</b></button>
+    <button id="show"><b>Show</b></button>
+    <!--<p id="divP" style="height:300px;width:500px;background:#efefef;">             This is looking nice.         </p>-->
+    <!--<div id="divScroll" style="height:100px;width:300px;overflow:scroll;">         <p id="divP" style="height:300px;width:500px;background:#efefef;">             This is looking nice.         </p>     </div>-->
+
+</body>
+</html>

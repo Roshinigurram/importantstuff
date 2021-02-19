@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery Effects</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+            $("#btnAnimate").click(function () {
+                $("#pAnimate").animate({
+                    width: "600px",
+                    fontSize: "50px",
+                    height: "300px"
+                }, 500);
+            });
+
+            $("#btnHide").click(function () {
+                $("div").hide("1500");
+            });
+            $("#btnShow").click(function () {
+                $("div").show("1200");
+            });
+            $("#btnSlideUp").click(function () {
+                $("#divSlideUp").slideUp();
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="Animate" id="btnAnimate" />
+    <input type="button" value="SlideUp" id="btnSlideUp" />
+    <p id="pAnimate" style="background-color:crimson;">Animation</p>
+    <div id="divSlideUp" style="color:deeppink">
+            <h2 id="div2">Div2 Attributes</h2>
+            <h2 id="div3">Jquery Attributes</h2>
+            <h1>Implementing specific classes in jquery</h1>
+            <h4>Implementing classes in jquery</h4>
+            <h3>Select multiple elements at a time</h3>
+            <b>Hide and Show is performed using div with #-ID</b>
+    </div>
+    
+    <button id="btnHide">Hide</button>
+    <button id="btnShow">Show</button>
+</body>
+</html>

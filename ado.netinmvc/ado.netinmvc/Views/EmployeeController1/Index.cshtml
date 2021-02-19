@@ -1,0 +1,37 @@
+﻿@model System.Data.DataTable
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<table class="table table table-striped">
+    <tr>
+       
+        <th>Id</th>
+        <th>Empname</th>
+        <th>salary</th>
+        <th>deptno</th>
+        <th>edit</th>
+    </tr>
+    @for(int i=0;i<Model.Rows.Count;i++)
+    {
+<tr>
+    <td>@Model.Rows[i][0]</td>
+    <td>@Model.Rows[i][1]</td>
+    <td>@Model.Rows[i][2]</td>
+    <td>@Model.Rows[i][3]</td>
+    <td>
+        <a asp-action="Edit" asp-route-id="@Model.Rows[i][0]">Edit</a>
+        <a asp-action="Details" asp-route-id="@Model.Rows[i][0]">Details</a>
+        <a asp-action="Delete" asp-route-id="@Model.Rows[i][0]">Delete</a>
+
+
+    </td>
+</tr>
+    }
+</table>
+<div>
+    <a asp-action="Create">create</a>
+ 
+</div>
+
